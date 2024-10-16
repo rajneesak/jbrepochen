@@ -24,16 +24,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Install Xvfb to run Cypress in a headless environment
-      - name: Install Xvfb
-        run: sudo apt-get install -y xvfb
-
-      # Start Xvfb before running Cypress
-      - name: Start Xvfb
-        run: |
-          Xvfb :99 -ac &
-          export DISPLAY=:99
-          
       - name: Run Cypress tests in parallel
         run: |
-          npm run test:parallelreg
+          npm run test
