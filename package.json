@@ -6,6 +6,8 @@
   "scripts": {
     "test": "cypress run",
     "browserstackrun": "npx browserstack-cypress run",
+    "test:dma": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
+    "test:reg": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
     "test:dmaone": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
     "test:dmatwo": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
     "test:dmathree": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
