@@ -1,0 +1,27 @@
+{
+  "name": "cypressparalleltesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "browserstackrun": "npx browserstack-cypress run",
+    "test:dmaone": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
+    "test:dmatwo": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
+    "test:dmathree": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
+    "test:dmafour": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
+    "test:paralleldma": "npm-run-all --parallel test:dmaone test:dmatwo test:dmathree test:dmafour",
+    "test:one": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
+    "test:two": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
+    "test:three": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
+    "test:four": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
+    "test:parallelreg": "npm-run-all --parallel test:one test:two test:three test:four"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.15.0",
+    "cypress-parallel": "^0.14.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

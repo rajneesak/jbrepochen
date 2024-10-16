@@ -1,0 +1,32 @@
+{
+  "auth": {
+    "username": "rajsudhirrajsudh_nFHQJ6",
+    "access_key": "qeU3qNS1TM5p8Jmaa8Rd"
+  },
+  "browsers": [{
+    "browser": "chrome",
+    "os": "OS X Ventura",
+    "versions": ["latest", "latest - 1"]
+  },
+  {
+    "browser": "firefox",
+    "os": "OS X Mojave",
+    "versions": ["latest", "latest - 1"]
+  },
+  {
+    "browser": "edge",
+    "os": "OS X Catalina",
+    "versions": ["latest"]
+  }
+],
+"run_settings": {
+  "cypress_config_file": "./cypress.config.js",
+  "cypress_version": "12.5.1",
+  "npm_dependencies": {
+    "cypress": "12.3"
+  },
+  "project_name": "Cypress OLR test build",
+  "build_name": "D&G OLR e2e - Build no. 1",
+  "parallels": "5"
+}
+}
