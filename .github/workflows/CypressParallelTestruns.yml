@@ -1,0 +1,29 @@
+name: Cypress Parallel Test runs
+ 
+on:
+  workflow_dispatch:
+ 
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+ 
+    strategy:
+      matrix:
+        instance: [1, 2, 3, 4, 5] # Adjust the number of instances
+      fail-fast: false
+ 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+ 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+ 
+      - name: Install dependencies
+        run: npm install
+ 
+      - name: Run Cypress tests in parallel
+        run: |
+          npm run test
