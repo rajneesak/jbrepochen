@@ -9,13 +9,11 @@
     "test:dmaone": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
     "test:dmatwo": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
     "test:dmathree": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
-    "test:dmafour": "cypress run --spec 'cypress/e2e/UKOLR/MyAccount.cy.js'",
-    "test:paralleldma": "npm-run-all --parallel test:dmaone test:dmatwo test:dmathree test:dmafour",
+    "test:paralleldma": "npm-run-all --parallel test:dmaone test:dmatwo test:dmathree",
     "test:one": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
     "test:two": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
     "test:three": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
-    "test:four": "cypress run --spec 'cypress/e2e/UKOLR/BekoRegsalesjourney.cy.js'",
-    "test:parallelreg": "npm-run-all --parallel test:one test:two test:three test:four"
+    "test:parallelreg": "npm-run-all --parallel test:one test:two test:three"
   },
   "author": "",
   "license": "ISC",
