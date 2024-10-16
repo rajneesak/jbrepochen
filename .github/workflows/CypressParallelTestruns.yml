@@ -9,7 +9,7 @@ jobs:
  
     strategy:
       matrix:
-        instance: [1, 2, 3, 4, 5] # Adjust the number of instances
+        instance: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] # Adjust the number of instances
       fail-fast: false
  
     steps:
@@ -26,4 +26,4 @@ jobs:
 
       - name: Run Cypress tests in parallel
         run: |
-          npm run test
+          npm run test:reg
