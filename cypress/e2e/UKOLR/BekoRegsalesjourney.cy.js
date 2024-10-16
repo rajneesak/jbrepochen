@@ -4,7 +4,7 @@ describe('Register Appliance Page Test', () => {
 
   it('Registration only for Beko OLR journey', () => {
     // Visit the URL
-    cy.visit('/');
+    cy.visit('https://beko.partners.dandg.uk.euw1.uat.test.athome.domgentest.cloud/register/appliance-details#1');
     cy.wait(5000); 
 
     cy.get('#onetrust-accept-btn-handler', { timeout: 30000 }) 
@@ -152,7 +152,7 @@ cy.get('h1.hero-banner__title.ng-star-inserted', { timeout: 60000 })
   
   it('Enhanced protection plan purchase for Beko OLR journey', () => {
     // Visit the URL
-    cy.visit('/');
+    cy.visit('https://beko.partners.dandg.uk.euw1.uat.test.athome.domgentest.cloud/register/appliance-details#1');
     cy.wait(5000);  
 
     cy.get('#onetrust-accept-btn-handler', { timeout: 30000 }) 
